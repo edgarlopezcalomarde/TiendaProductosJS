@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.productos, .menu{
+    max-width: 1068px;
+    margin: auto;
+} 
+
+header{
+    background: rgb(93, 93, 210);
+}
+
+
+.menu{
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+.menu__item{
+    font-size: 18pt;
+    cursor: pointer;
+
+    color: white;
+    font-weight: 700;
+}
+
+/* .productos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 16px;
+}  */
+
+.productos{
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(230px,1fr));
+    place-items: center;
+}
+
+
+.producto{
+    border: 1px solid rgb(93, 93, 210);
+    border-radius: 4px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.producto__nombre{
+    font-weight: 700;
+}
+
+.btnAddCarrito{
+    display: block;
+    margin-left: auto;
+}
+
+
+.producto__img{
+    width: 200px;
+}
+
+dialog{ 
+    padding: 20px;
+    margin: auto;
+}
+
+.dialogBody{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.btns button{
+    padding: 10px 20px;
+}
+
+
+.artImg{
+    height: 50px;
+}
